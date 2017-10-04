@@ -1,5 +1,5 @@
 # Satung rounding
-***
+
 Calculate usable price 
  - 100.24 >> 100.25
  - 0.78 >> 0.75
@@ -7,8 +7,7 @@ Calculate usable price
  - 24.33 >> 24.50
  - 18.07 >> 18.00
  
- Requirements
-============
+# Requirements
 * PHP >= 5.3.0
 
 # Installation
