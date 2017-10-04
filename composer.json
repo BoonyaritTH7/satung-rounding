@@ -1,0 +1,19 @@
+{
+    "name": "boonyaritth7/satung-rounding",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Boonyarit Eoyeye",
+            "email": "yim.boonyarit@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": { 
+            "boonyaritth7\\satung-rounding\\": "src/" 
+        }
+    }
+}
