@@ -4,7 +4,7 @@ namespace Satung;
 
 class SatungRounding
 {
-    protected function round($amount)
+    protected static function round($amount)
     {   
         $dif = (float)$amount - (int)$amount;
 
