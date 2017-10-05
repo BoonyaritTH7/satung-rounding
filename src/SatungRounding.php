@@ -4,8 +4,8 @@ namespace Satung;
 
 class SatungRounding
 {
-    public static function round($amount)
-    {
+    protected function round($amount)
+    {   
         $dif = (float)$amount - (int)$amount;
 
         if($dif < 0.12){
@@ -25,5 +25,12 @@ class SatungRounding
         }
 
         return number_format((int)$amount + $add, 2, '.', '');
+    }
+
+    public static function calculate($amount, $vat = 0, $quantity = 1)
+    {
+        $price_include_vat = (float)$amount * ((100 + $vat) / 100);
+        $price = self::round($price_include_vat);
+        return (float)$price * $quantity;
     }
 }
